@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <script src="p5.js"></script>
+  
+   
+  	   <meta charset="UTF-8" />
+     <title>Credit</title>
+     <style type="">
+      @font-face{
+        font-family: kabond;
+        src: "assets/KABOND.otf";
+      }
+      @font-face{
+        font-family: orbitron;
+        src: "https://use.typekit.net/qtn3bgk.css";
+      }
+       @font-face{
+        font-family: eurostile;
+        src: "assets/Eurostile.ttf";
+      }
+       img {
+        margin: 2%;
+ 
+       }
+      body{
+        background-color: red;
+
+       }
+       p{
+        font-family: eurostile;
+        font-size: 1.8em;
+       }
+       span{
+        font-family: kabond;
+        font-size: 1.5em;
+       }
+       #Jaune:hover {
+       color: yellow;
+       }
+       #bleu:hover {
+       color: blue;
+       }
+       #vert:hover {
+       color: #64FE2E;
+       }
+       #rose:hover {
+       color: #FA58D0;
+       }
+       #rouge:hover {
+       color: red;
+       }
+       #bleu:hover {
+       color: #6666ff;
+     }
+       h1{
+        font-family: kabond;
+        font-size: 2em;
+        text-shadow: 0 0 10px #FFFFFF;
+
+       }
+       
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  text-underline-position: none;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a{
+    color: white;
+  background-color: transparent;body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 200%;
+  height: auto;
+  /* border: 1px solid #444; */
+}
+  text-decoration: none;
+}
+
+body {
+  background-color: blue;
+  color: #ffffff;
+}
+
+canvas {
+  position: fixed;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: -1;
+  height: auto;
+  opacity: 0.9;
+  width: 100% !important; 
+  height: 200% !important;
+  /* border: 1px solid #444; */
+}
+</style>
+ <style>
+      .container {
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .container-loaded {
+        opacity: 1;
+      }
+    </style>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body class="container">
+  
+ 
+    <div class="divpics" style="align-items: center; justify-content: center; display: flex; margin-top: 7%; ">
+      <img class="imgs1" src="assets/nikelight.png" style="width: 16%">
+      <img class="imgs2" src="assets/chelsealight.png" style="width: 8%">
+      <img class="imgs3" src="assets/threelight.png" style="width: 8%">
+      <img class="imgs4" src="assets/uallight.png" style="width: 13%">
+    </div>
+  
+  <div class="jpp" style="align-items: center;justify-content: center;display: flex;flex-direction: column;">
+   
+   <img style="margin-top: 7%;" class="imgs1" src="assets/THE TEAM.png"> 
+
+   <div style="align-items: center; justify-content: center; display: flex; margin-top: 5%; width: 70%; height: 70%; ">
+    <img src="assets/YoonSoo.jpg" style="width: 17%">
+    <div>
+      <p><span id="Jaune">Yoon Soo Yang</span></br>
+      BA Fashion Print</br>
+       <a href="https://www.instagram.com/ellayoonsoo/">@ellayoonsoo</a></p>
+    </div>
+  </div>
+      <div style="align-items: center; justify-content: center; display: flex; margin-top: 2%;  width: 70%; height: 70%;">
+    <img src="assets/Francesco.jpg" style="width: 17%">
+    <div>
+      <p><span id="vert">Francesco Fedele</span></br>
+       BA Fashion Design and</br> Marketing</br>
+       <a href="https://www.instagram.com/dabigfranci/">@dabigfranci</a></p>
+    </div>
+  </div>
+      <div style="align-items: center; justify-content: center; display: flex; margin-top: 2%; width: 70%; height: 70%; ">
+    <img src="assets/Jess.jpg" style="width: 17%">
+    <div>
+      <p><span id="rose">Jessica Xu</span></br>
+       BA Fashion Knitwear </br>
+       <a href="https://www.instagram.com/jessicaxpan/">@jessicaxpan</a></p>
+    </div>
+  </div>
+      <div style="align-items: center; justify-content: center; display: flex; margin-top: 2%; width: 70%; height: 70%; ">
+    <img src="assets/Bryan.jpg" style="width: 17%">
+     <div>
+      <p><span id="bleu">Bryan Yeo Jia Wei</span></br>
+       BA Fashion Knitwear</br>
+       <a href="https://www.instagram.com/bryanxadkins/">@bryanxadkins</a></p>
+    </div>
+     
+  </div>
+      <div style="align-items: center; justify-content: center; display: flex; margin-top: 2%; width: 70%; height: 70%; ">
+    <img src="assets/Maggie.jpg" style="width: 17%">
+    <div>
+      <p><span id="vert">Maggie</span></br>
+       BA Fashion Print</br>
+       <a href="https://www.instagram.com/_yan.tting/">@_yan.tting</a></p>
+    </div>
+  </div>
+      <div style="align-items: center; justify-content: center; display: flex; margin-top: 2%; width: 70%; height: 70%; ">
+    <img src="assets/shasha.jpg" style="width: 17%">
+    <div>
+      <p><span id="rouge">Shashamani</br> Jackson</span></br>
+       BA Fashion Knitwear</br>
+       <a href="instagram.com/p/CJgjp5gguci/">@im_shashamani</a></p>
+    </div>
+  </div>
+   <div style="align-items: center; justify-content: center; display: flex; margin-top: 2%; width: 70%; height: 70%; ">
+    <img src="assets/scan0006.jpg" style="width: 17%">
+    <div>
+      <p><span id="bleu">Roland</br> D'Herbemont</span></br>
+      BA Fashion Communication Promotion</br>
+       <a href="https://www.instagram.com/rolandhhhh/">@rolandhhhh</a></p>
+    </div>
+ 
+
+   </div> 
+    
+  <div style="text-align: center; justify-content: center; margin-top: 11%">
+    <p style="font-family: kabond; font-size: 2em">
+    And along the way we are thanking </br> all this amazing people:
+  </p>
+  <div style="margin-top: 5%">
+    <div class="models">
+  <h1>
+   - Models:
+  </h1>
+  <a href="https://www.instagram.com/inntya/">
+  <p>
+   - Ya - @inntya -
+  </p>
+   </a>
+   <a href="https://www.instagram.com/silvesti_/">
+  <p>
+   - George Silvesti Bell - @silvesti -
+  </p>
+</a>
+  <a href="https://www.instagram.com/dalilalegesse/">
+  <p>
+   - Dalila Legesse - @dalilalegesse -
+  </p>
+</a>
+  <a href="https://www.instagram.com/alamaxtoure/">
+  <p>
+   - Alama Toure - @alamaxtoure -
+  </p>
+</a>
+</div>
+
+<div class="MakeUp" style="margin-top:5%;">
+  <h1>- Make up and hair:</h1>
+  <p>- Laura Kilby - </br>@abbiee_louise</p>
+  <p>- Abbie Miklosz -</p>
+  <p>- Frankie Gabriel - </br>
+  @frankiegav_hmup</p>
+  <p>- Shashamani Jackson - (hair headpiece)</p>
+  </div>
+
+  <p>
+</div>
+<div>
+  <h1 style="margin-top: 5%;">The fantastic plateforms without which </br>nothing could be possible:</h1>
+    <p><a href="https://cables.gl/home">- Cablesgl -</a></p>
+     <p><a href="https://vincentgarreau.com/particles.js/">- Vincent Garreau -</a></p>
+    <p> <a href="https://www.maxon.net/fr/">- Maxon -</a></p>
+     <p><a href="https://p5js.org/">- p5js library -</a></p>
+
+    
+
+  <h1 style="margin-top: 5%;">A special credit to the two artists that drew</br> Yoon Soo's soccer ball:</h1>
+  <p>
+- Joshua Han - </br>
+- Daniel Han -
+  </p>
+  <h1 style="margin-top: 3%;">And to the models that played for our videos:</h1> 
+  <p>
+    - Kameron Bell - </br>
+    - Riley Mendoza -
+
+  </p>
+  <a href=""><img src="assets/GoBack.png" style="width: 15%;"></a>
+
+
+  </div>
+     <script src="easing.js"></script>
+    <script src="sketch.js"></script>
+
+    <script>
+      $(document).ready(function() {
+    // Let's simulate some loading time.
+    
+    setTimeout(function() {
+        $('.container').addClass('container-loaded');
+    }, 1500);
+});
+    </script>
+
+
+  </body>
